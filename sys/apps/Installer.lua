@@ -59,10 +59,7 @@ local pages = {
 				{ heading = 'Branch',      key = 'branch' },
 				{ heading = 'Description', key = 'description' },
 			},
-			values = {
-				{ branch = 'develop-1.8', description = 'Recommended' },
-				_G.OPUS_INSTALL_BRANCH and { branch = _G.OPUS_INSTALL_BRANCH, description = "Alternative" } or nil
-			},
+			values = install.branches,
 			autospace = true,
 		},
 	},
